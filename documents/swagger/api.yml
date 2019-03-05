@@ -11,3 +11,7 @@ paths:
     $ref: "./entries/booksAdd.yml"
   /books/{book_id}:
     $ref: "./entries/booksId.yml"
+  /rental:
+    $ref: "./entries/rental.yml"
+  /return:
+    $ref: "./entries/return.yml"

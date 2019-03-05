@@ -11,7 +11,21 @@ post:
           properties:
             id:
               type: string
-            name:
+            title:
+              type: string
+            URL:
+              type: string
+            image:
+              type: string
+            description:
+              type: string
+            ISBN:
+              type: string
+            author:
+              type: string
+            publisher:
+              type: string
+            publishedYear:
               type: string
   responses:
     '200':
@@ -23,12 +37,30 @@ post:
             items:
               required:
                 - id
-                - name
+                - title
+                - URL
+                - image
+                - description
+                - ISBN
+                - author
+                - publisher
+                - publishedYear
               properties:
                 id:
-                  type: integer
-                  format: int64
-                name:
+                  type: string
+                title:
+                  type: string
+                URL:
+                  type: string
+                image:
                   type: string
                 description:
+                  type: string
+                ISBN:
+                  type: string
+                author:
+                  type: string
+                publisher:
+                  type: string
+                publishedYear:
                   type: string
