@@ -14,9 +14,37 @@
                     <input type="text" class="form-control">
                 </div>
             </form>
+            <div>
+                <label>画像</label><br>
+                <input type="file">
+            </div>
             <form>
                 <div class="form-group">
-                    <label>画像</label>
+                    <label>書籍詳細</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="form-group">
+                    <label>ISBN</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="form-group">
+                    <label>著者</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="form-group">
+                    <label>出版社</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="form-group">
+                    <label>発行年</label>
                     <input type="text" class="form-control">
                 </div>
             </form>

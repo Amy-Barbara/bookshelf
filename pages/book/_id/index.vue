@@ -1,11 +1,70 @@
 <template>
     <section>
-        <h2 class="mb-3">{{book.number}} {{book.title}}</h2>
-        <div class="mb-5">{{book.body}}</div>
+        <h2 class="mb-3">書籍詳細</h2>
+        <table class="table">
+            <tr>
+                <th>書籍名</th>
+                <td>書籍名</td>
+            </tr>
+            <tr>
+                <th>内容詳細</th>
+                <td>詳細</td>
+            </tr>
+            <tr>
+                <th>Amazon URL</th>
+                <td>URL</td>
+            </tr>
+            <tr>
+                <th>画像</th>
+                <td>内容</td>
+            </tr>
+            <tr>
+                <th>ISBN</th>
+                <td>内容</td>
+            </tr>
+            <tr>
+                <th>著者</th>
+                <td>内容</td>
+            </tr>
+            <tr>
+                <th>出版社</th>
+                <td>内容</td>
+            </tr>
+            <tr>
+                <th>発行年</th>
+                <td>内容</td>
+            </tr>
+        </table>
         <h2 class="mb-3">貸出履歴</h2>
-        <div class="mb-5">{{history.number}} {{history.name}} {{history.date_from}} {{history.date_to}}</div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>名前</th>
+                <th>貸出日</th>
+                <th>返却日</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{history.number}}</td>
+                <td>{{history.name}}</td>
+                <td>{{history.date_from}}</td>
+                <td>{{history.date_to}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <h5>この本を借りる</h5>
+        <div>
+            <form>
+                <div class="form-group">
+                    <label>名前</label>
+                    <input typy="text">
+                    <router-link class="btn btn-primary" to="/">借りる</router-link>
+                </div>
+            </form>
+        </div>
         <router-link class="btn btn-outline-primary" to="/">戻る</router-link>
-        <router-link class="btn btn-danger" to="/">この本を削除</router-link>
     </section>
 </template>
 
@@ -15,8 +74,8 @@
             return {
                 book: {
                     number: "1.",
-                    title: "本のタイトル",
-                    body: "本の詳細"
+                    title: "書籍のタイトル",
+                    detail: "書籍の詳細"
                 },
                 history: {
                     number: "1",
