@@ -13,10 +13,15 @@ get:
             items:
               required:
                 - id
-                - name
+                - title
+                - status
+                - count
               properties:
                 id:
-                  type: integer
-                  format: int64
-                name:
+                  type: string
+                title:
+                  type: string
+                isRental:
+                  type: boolean
+                count:
                   type: string
