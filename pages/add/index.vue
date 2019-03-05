@@ -5,19 +5,23 @@
             <form>
                 <div class="form-group">
                     <label>書籍名</label>
-                    <input type="text" class="form-control" v-model="form.title">
+                    <input type="text" class="form-control">
                 </div>
+            </form>
+            <form>
                 <div class="form-group">
                     <label>Amazon URL</label>
-                    <input type="text" class="form-control" v-model="form.title">
+                    <input type="text" class="form-control">
                 </div>
+            </form>
+            <form>
                 <div class="form-group">
                     <label>画像</label>
-                    <input type="text" class="form-control" v-model="form.title">
+                    <input type="text" class="form-control">
                 </div>
-                <router-link class="btn btn-outline-primary" to="/">戻る</router-link>
-                <a class="btn btn-primary" tabindex="" @click="submit">追加</a>
             </form>
+            <router-link class="btn btn-outline-primary" to="/">戻る</router-link>
+            <a class="btn btn-primary" tabindex="" @click="submit">追加</a>
         </div>
     </section>
 </template>

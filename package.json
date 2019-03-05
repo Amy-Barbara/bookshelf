@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0"
+    "json-refs": "^3.0.12",
+    "nuxt": "^2.4.0",
+    "swagger-ui-dist": "^3.21.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

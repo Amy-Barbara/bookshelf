@@ -1,0 +1,34 @@
+post:
+  summary: 書籍追加
+  tags:
+    - Book
+  requestBody:
+    description: 追加する本の情報
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+  responses:
+    '200':
+      description: 書籍を新規追加する
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              required:
+                - id
+                - name
+              properties:
+                id:
+                  type: integer
+                  format: int64
+                name:
+                  type: string
+                description:
+                  type: string

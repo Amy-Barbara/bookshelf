@@ -1,0 +1,13 @@
+openapi: "3.0.2"
+info:
+  version: 1.0.0
+  title: OSA Sample Document
+  license:
+    name: MIT
+paths:
+  /books:
+    $ref: "./entries/books.yml"
+  /books/add:
+    $ref: "./entries/booksAdd.yml"
+  /books/{book_id}:
+    $ref: "./entries/booksId.yml"

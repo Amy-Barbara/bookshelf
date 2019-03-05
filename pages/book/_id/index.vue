@@ -5,7 +5,7 @@
         <h2 class="mb-3">貸出履歴</h2>
         <div class="mb-5">{{history.number}} {{history.name}} {{history.date_from}} {{history.date_to}}</div>
         <router-link class="btn btn-outline-primary" to="/">戻る</router-link>
-        <router-link class="btn btn-outline-danger" to="/">この本を削除</router-link>
+        <router-link class="btn btn-danger" to="/">この本を削除</router-link>
     </section>
 </template>
 
