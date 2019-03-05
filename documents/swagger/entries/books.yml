@@ -14,8 +14,15 @@ get:
               required:
                 - id
                 - title
-                - status
-                - count
+                - isRental
+                - rentalCount
+                - URL
+                - image
+                - description
+                - ISBN
+                - author
+                - publisher
+                - publishedYear
               properties:
                 id:
                   type: string
@@ -23,5 +30,19 @@ get:
                   type: string
                 isRental:
                   type: boolean
-                count:
+                rentalCount:
                   type: string
+                URL:
+                  type: string
+                image:
+                    type: string
+                description:
+                    type: string
+                ISBN:
+                    type: string
+                author:
+                    type: string
+                publisher:
+                    type: string
+                publishedYear:
+                    type: string
