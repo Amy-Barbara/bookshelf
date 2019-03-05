@@ -10,7 +10,7 @@ post:
         schema:
           type: object
           properties:
-            id:
+            bookId:
               type: string
             name:
               type: string
@@ -25,11 +25,11 @@ post:
             type: array
             items:
               required:
-                - id
+                - bookId
                 - name
                 - returnDate
               properties:
-                id:
+                bookId:
                   type: string
                 name:
                   type: string
