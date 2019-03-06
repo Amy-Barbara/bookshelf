@@ -18,36 +18,15 @@
           <tr v-for="(book, index) in books" :key="index">
               <td>{{index+1}}</td>
               <td>
-                  <router-link :to="`/book/${books[0].title}`">
+                  <router-link :to="`/book/${books[index].number}`">
                   {{book.title}}
                   </router-link>
               </td>
               <td>○</td>
               <td>5</td>
           </tr>
-          <!--<tr>-->
-              <!--<td>{{books[1].number}}</td>-->
-              <!--<td>{{books[1].title}}</td>-->
-              <!--<td>○</td>-->
-              <!--<td>5</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-              <!--<td>{{books[2].number}}</td>-->
-              <!--<td>{{books[2].title}}</td>-->
-              <!--<td>○</td>-->
-              <!--<td>5</td>-->
-          <!--</tr>-->
           </tbody>
       </table>
-
-
-
-
-      <!--<router-link :to="`/book/${book.number}`" class="list-group-item-action" v-for="(book,index) in books" :key="index">-->
-          <!--<div>{{book.number}} {{book.title}}</div>-->
-      <!--</router-link>-->
-    <!--<div class="list-group list-group-flush">-->
-    <!--</div>-->
   </section>
 </template>
 

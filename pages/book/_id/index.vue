@@ -54,17 +54,18 @@
             </tr>
             </tbody>
         </table>
-        <h5>この本を借りる</h5>
-        <div>
-            <form>
-                <div class="form-group">
-                    <label>名前</label>
-                    <input typy="text">
-                    <router-link class="btn btn-primary" to="/">借りる</router-link>
-                </div>
-            </form>
+        <h2 class="mb-3">この書籍を借りる</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="名前を入力してください">
+            <div class="input-group-append">
+                <router-link to="/">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">借りる</button>
+                </router-link>
+            </div>
         </div>
+        <div class="btn-back">
         <router-link class="btn btn-outline-primary" to="/">戻る</router-link>
+        </div>
     </section>
 </template>
 
@@ -89,5 +90,7 @@
 </script>
 
 <style>
-
+.btn-back{
+    padding-bottom: 20px;
+}
 </style>
